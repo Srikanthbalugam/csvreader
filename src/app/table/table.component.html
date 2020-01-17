@@ -1,0 +1,27 @@
+<div>
+    <input #fileUpload id="fileInput" name="file" type="file" ([value])="fName" (change)="fileChanged($event)">
+  </div>
+  <table class="table table-bordered">
+    <tr>
+      <th>name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Source</th>
+      <th>Reciepient</th>
+      <th>Amount</th>
+      <th>Schedule</th>
+      <th>Reference</th>
+    <tr *ngFor="let content of records">
+      <td>{{content.name}}</td>
+      <td>{{content.email}}</td>
+      <td>{{content.phone}}</td>
+      <td>{{content.source}}</td>
+      <td>{{content.reciepient}}</td>
+      <td>{{content.amount}}</td>
+      <td>{{content.schedule}}</td>
+      <td>{{content.reference}}</td>
+    </tr>
+  </table>
+  {{amount2}}
+  
+  
